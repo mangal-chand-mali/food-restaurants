@@ -1,0 +1,352 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				
+			}body{
+				background:#f3f3f3;
+			}
+			.main{
+				height:12%;
+				width:100%;
+				background: #151515;
+				position: fixed;				
+			}.menu_bar{
+				list-style: none;
+				display: flex;
+				margin-left: 50px;
+				margin-top: -30px;
+				padding-left: 400px;
+				position: relative;
+				color: white;				
+			}.menu_bar a{
+				color:white;
+				text-decoration:none;
+				font-size: 23px;
+				margin-left:45px;
+			}.menu_bar li a:hover{
+				color:red;
+			}.icon{
+				color:white;
+				margin-top:13px;
+				margin-left:20px;
+				position: relative;
+			}.icon i {
+				border:6px solid white;
+				padding:10px;
+				border-radius:50%;
+			}.img img{
+				margin-top: 75px;
+				width:100%;
+				height:90%;
+
+			}.img-centent{
+				margin-top: -370px;
+				text-align: center;
+				color: white;
+			}.img-centent h1{
+				font-size: 60px;
+				font-weight: bold;
+			}.img-centent p{
+				font-size: 20px;
+				margin-top: 10px;
+			}.img-centent button{
+				margin-top: 20px;
+				background: red;
+				border: 5px solid red;
+			}.img-centent a{
+				font-size: 20px;
+				font-weight: bold;
+				padding: 5px 10px 5px 10px;
+				text-decoration: none;
+				color: white;
+				
+				
+			}
+
+			.about{
+				margin-top: 250px;
+			}.about table{
+				margin-left: 70px;
+			}.about h1{
+				font-size: 65px;
+			}.about p{
+				font-size: 25px;
+				line-height: 30px;
+			}.about img{
+				margin-left: 130px;
+			}
+
+			.menu{
+				margin-top: 80px;
+				margin-left: 70px;
+			}.menu h1{
+				margin-left: 475px;
+				font-size: 55px;
+				margin-bottom: 20px;
+			}.menu table img{
+				height: 300px;
+				width: 340px;
+				margin: 20px;
+			}.menu td{
+				background: white;
+			}.menu table p{
+				text-align: center;
+				margin: 10px;
+				font-size: 20px;
+			}.menu button{
+				margin-top: 20px;
+				background: red;
+				border: 5px solid red;
+				margin-left: 520px;
+			}.menu a{
+				font-size: 20px;
+				font-weight: bold;
+				padding: 15px 40px 5px 40px;
+				text-decoration: none;
+				color: white;				
+			}
+
+			.expert{
+				margin-top: 80px;
+				margin-left: 70px;
+			}.expert h1{
+				margin-left: 430px;
+				font-size: 40px;
+				margin-bottom: 20px;
+			}.expert table img{
+				height: 180px;
+				width: 239px;
+				margin: 20px;
+			}.expert td{
+				background: white;
+			}.expert table p{
+				text-align: center;
+				margin-bottom: 10px;
+				font-size: 20px;
+			}
+
+			.review{
+				margin-top: 600px;
+				background-image: url("https://media.istockphoto.com/id/157197337/photo/blueberries.jpg?s=612x612&w=0&k=20&c=wsaP1C6PPoIrlAPX-Zbi8uwmOUp08oVB02pY5kjf39U=");
+				background-repeat: no-repeat;
+				background-size: 100% 90%;
+				height: 100%;
+				
+			}/* .review-img img{
+				height: 80%;
+				width: 100%;
+				z-index: 1;
+			}*/.review-con{ 
+				text-align: center;
+				margin-top: -500px;
+			}.review-con h1{
+				margin-top: 100px;
+				font-size: 60px;
+				color: white;
+			}.review-con p{
+				font-size: 30px;
+				color: white;
+			}.review-t{
+				margin-left: 200px;
+			}.review-t th{
+				background: white;
+				margin-left: 400px;
+				height: 400px;
+				width: 400px;
+			}.review-t img{
+				margin-top: -20px;
+				height: 150px;
+				width: 150px;
+				border-radius: 50%;
+			}.review-t th p{
+				margin-left: 30px;
+				margin-top: 20px;
+				margin-right: 30px;
+				font-size: 20px;
+			}
+
+			.contact{
+				text-align: center;
+				font-size: 30px;
+				font-weight: bold;
+			}.send{
+				margin-left: 100px;
+				height: 350px;
+				width: 90%;
+			}.us{
+				background: white;
+				width: 400px;
+				
+			}.us div{
+				margin-left: 50px;
+				margin-top: -10px;
+				font-size: 20px;
+			}input{
+				height: 30px;
+				width: 290px;
+				margin-left: 50px;
+				margin-top: 20px;
+				border-left: 3px solid black;
+				border-top: 2px solid silver;
+				border-right: 2px solid silver;
+				border-bottom: 2px solid silver;
+			}.b-send{
+				height: 35px;
+				width: 120px;
+				margin-left: 50px;
+				margin-top: 30px;
+				background: red;
+				border: 2px solid red;
+			}.b-send a{
+				color: white;
+				font-size: 20px;
+				text-decoration: none;
+			}.send td img{
+				height: 300px;
+				width: 700px;
+				
+			}.bottom{
+				margin-top: 50px;
+				background: white;
+				
+				text-align: center;
+				height: 100px;
+			}.bottom h1{
+				padding: 20px;
+				font-size: 22px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header class="main">
+			<div class="icon">
+				<i class="fa-solid fa-utensils"></i>
+
+			</div>
+			<ul class="menu_bar">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">MENU</a></li>
+				<li><a href="#">EXPERT</a></li>
+				<li><a href="#">TESTIMONIALS</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</header>
+		<div class="img">
+			<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+			<div class="img-centent">
+				<h1>Always Choose Good</h1>
+				<p>Lorem ipsum dolor sit ament consectetur adipsiching elit. Natus vero sapientes similique magni, reprehenderit<br>
+				aspernatur quaerat officia quae harum nihil repudiandae dolorem, ratione ,dolore neque?</p>
+				<button><a href="#">OUR MENU</a> </button>
+			</div>
+		</div>
+		<div class="about">
+			<table cellspacing="20px">
+				<tr>
+					<td>
+						<h1><font color="red">A</font>bout us</h1>
+						<p>Larem ipsum dolor sit amet, consectetur adipsiching elit.Ex<br>
+						 explicabo aliquam  modi iss  cumque dolorum, beatae ipsum<br>
+						voluptatibus placcat suscipit iusto rcprchenderit ducimus sit<br>
+						quis nosciunt voluptato. Maiores libero expedita doloribus</p>
+						<br>
+						<p>Loren ipsum dolor sit arnt is consectetur adipisicing elit. Ab<br>
+						consectetur accusantium curnque, is sequi laboriosam saepe<br>
+						eos distinctio neque nobis rerum! distinctio neque nobis</p>
+
+					</td>
+					<td>
+						<img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" height="300px" width="420px"/>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+		<div class="Menu">
+			<h1>Our <font color="red">M</font>enu</h1>
+			<table cellspacing="21px">
+				<tr>
+					<td><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+					<p>PIZZ</p></td>
+					<td><img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJyZWFrZmFzdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+					<p>Pancake</p></td>
+					<td><img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJydW5jaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+					<p>French Toast</p></td>
+				</tr>
+				<tr>
+					<td><img src="https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlzaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+					<p>Curry</p></td>
+					<td><img src="https://plus.unsplash.com/premium_photo-1673590981774-d9f534e0c617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGlzaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+					<p>Salade</p></td>
+					<td><img src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"/>
+					<p>Pasta</p></td>
+				</tr>
+			</table>
+			<button><a href="#">VIEW ALL</a></button>
+		</div>
+		<div class="expert">
+			<h1>Our Kitchen<font color="red">E</font>xpert</h1>
+			<table cellspacing="21px">
+				<tr>
+					<td><img src="https://media.istockphoto.com/id/1434957018/photo/young-smiling-male-hipster-healthy-food-blogger-preparing-a-meal-or-his-web-audience.jpg?s=612x612&w=0&k=20&c=TNPUHPNXElYmiX3tc4SVXKeVgI3oFwrnKZpDW46FOHw="/>
+					<p>Someone famous</p></td>
+					<td><img src="https://media.istockphoto.com/id/1459565421/photo/man-making-a-red-velvet-cake-at-home-perfecting-the-triple-sponge-base-of-the-cake-with-cream.jpg?s=612x612&w=0&k=20&c=PX3CKusnTQSLATPrNDaWVyswIFk2DbDkI8_t3oLvHFA="/>
+					<p>Someone famous</p></td>
+					<td><img src="https://media.istockphoto.com/id/1036558358/photo/young-boys-standing-near-blackboard-checking-soup-young-chef-boy-creative-design-concept-for.jpg?s=612x612&w=0&k=20&c=0yYgxgmPpFde0_X_5sg4tuJdAbuQ4JrxScpxxEzjuoY="/>
+					<p>Someone famous</p></td>
+					<td><img src="https://media.istockphoto.com/id/1076249998/photo/master-class-for-cooking-bread-in-a-bakery.jpg?s=612x612&w=0&k=20&c=M8Wn69fwI8ipgAooxpI5yrMUfOm2yuTugiBHk9i0ps4="/>
+					<p>Someone famous</p></td>
+				</tr>
+			</table>
+		</div>
+		<div class="review">
+			<!-- <div class="review-img">
+				<img src="https://media.istockphoto.com/id/157197337/photo/blueberries.jpg?s=612x612&w=0&k=20&c=wsaP1C6PPoIrlAPX-Zbi8uwmOUp08oVB02pY5kjf39U="/>
+			</div>  -->
+			<div class="review-con">
+				<h1><font color="red">T</font>op Review</h1>
+				<P>Lorem ipsum dolor sit amrt consectetur adipisiching elit. Autem, magni?</P>
+			</div>	
+			<table cellspacing="50px" class="review-t">
+				<tr>
+					<th><img src="https://images.unsplash.com/photo-1534339480783-6816b68be29c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBpcGVhbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+					
+					<p>Nice and clean place. The service was excellent. The lady serving us was amicable and helped us.
+						The food was not oily and not salty.
+						Would definitely go back.</p>
+						<p><font color="red" size="6">Someone famous</font></p></th>
+					<th><img src="https://media.istockphoto.com/id/1475638133/photo/portrait-of-young-woman-attractive-curly-haired-cheerful-showing-mocking-sign-gesture-opened.jpg?s=612x612&w=0&k=20&c=BEAgdZ-qHcGN4ZskQnkUfQlhuS4XWL4AscLXnVT6ryk="/>
+						<p>Amazing food. Amazing service. My new favorite restaurant in Ottawa. Can't wait to bring more friends and family here. Will recommend to everyone. Fresh Ingredients.</p>
+						<p><font color="red" size="6">Someone famous</font></p></th>
+				</tr>
+			</table>
+		</div>
+		<div class="contact">
+			<h1 class="h1"><font color="red">C</font>ontact us</h1>
+		</div>
+		<table class="send" cellspacing="21px">
+			<tr>
+				<td class="us">
+					<div>Send Massages</div>
+					<input type="text" uname="text" placeholder=" Name" height="50px"/><br>
+					<input type="email" uname="email" placeholder=" Email"/><br>
+					<input type="text" uname="text" placeholder=" Tell us about Yourseit"/><br>
+					<button class="b-send"><a href="#" >SEND</a></button>					
+				</td>
+				<td>
+					<img src="https://media.istockphoto.com/id/883982334/photo/taking-a-slice-out-of-the-healthy-life.jpg?s=612x612&w=0&k=20&c=T0vU3RNRB6kMoGR-AO8Irr9sEM_cNVj2q5JeNRw6bf4=" alt="">
+				</td>
+			</tr>
+			
+		</table>
+		<div class="bottom">
+			<h1>Copyright &copy; 2023 <font color="red">Mangal Chand Mali</font>. All right Reserved </h1>
+		</div>
+	</body>
+</html>
